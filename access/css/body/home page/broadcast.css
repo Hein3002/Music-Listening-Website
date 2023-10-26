@@ -1,0 +1,75 @@
+.broadcast{
+    position: relative;  
+    padding-top: 5px;
+    margin: 40px 0 65px;
+}
+.broadcast-listitem{
+    margin-top: 40px; 
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;    
+    border-radius: 8px;
+    position: relative;    
+}
+.broadcast-item{
+    position: absolute;
+    transition: 0.5s ease-in-out ;
+}
+.broadcast-item_img{
+    width: 370px;
+    height: 220px;
+    border-radius: 8px;  
+}
+.broadcast-item_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.broadcast-item_frofile{
+    margin-top: 10px;
+    display: flex;   
+    align-items: center; 
+    justify-content: flex-start;
+}
+.profile-img{   
+    overflow: hidden;
+    margin-right: 8px;
+}
+.profile-img img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-details{
+    display: flex;
+    align-items: center;
+}
+.gallery__item--first{
+    opacity: 1;
+    transform: translateX(calc(100% + 20px));
+}
+.gallery__item--selectbefor{
+    opacity: 1;
+    transform: translateX(0);
+}
+.gallery__item--last{
+    transform: translateX(calc(-100% - 20px));
+}
+.gallery__item--previous{
+    opacity: 0;
+    transform: translateX(calc(-20% + 20px));
+}
+.gallery__item--selectafter{
+    opacity: 0;
+    transform: translateX(0);
+}
+.gallery__item--next{
+    opacity: 0;
+    transform: translateX(calc(20% + 20px));
+}
+

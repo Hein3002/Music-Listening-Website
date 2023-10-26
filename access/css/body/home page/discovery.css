@@ -1,0 +1,48 @@
+.discovery{
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;	
+    margin-top: 70px;
+}
+.discovery{
+	margin-top: 70px;
+	padding: 18px 0;
+}
+.discovery-select{
+	position: absolute;
+	width: 100%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap:20px;
+}
+.discovery-select button{
+	font-size: 13px;
+	color: #cccbcb;
+	font-weight: 500;
+	border: solid thin rebeccapurple;
+	padding: 5px 10px;
+	border-radius: 50px;
+}
+.discovery-listitem{
+    display: flex;	
+	margin-top: 50px;
+}
+.discovery-item{
+    margin-bottom: 15px;
+    background: transparent;
+	padding: 5px;		
+}
+.discovery-item:hover {
+	background:linear-gradient( rgb(60 48 76), rgb(58 40 86));
+	border: solid thin rebeccapurple;
+	transform: translateY(-5px);
+}
+.discovery-listitem_right,
+.discovery-listitem_center,
+.discovery-listitem_left{
+	flex: 1;
+}

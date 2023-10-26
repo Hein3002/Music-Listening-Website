@@ -1,0 +1,107 @@
+/* --------------------------------------lobby--------------------------- */
+
+.lobby{
+    display: flex;
+	position: relative;
+	height: 370px;
+	width: auto;
+	padding-top: 5px;	
+	margin-left: -12px;
+}
+.lobby_listitemalbum{
+	position: relative;	
+	height: 100%;
+	width: 100%;
+	padding-top:10px;
+	margin-left: -15px;
+	transform-style:preserve-3d;
+	perspective: 1000px;
+}
+.album-item{
+    display: flex;
+	position: absolute;	
+}
+.album-item_img{ 
+	position: relative;	
+	margin-left:25px ;
+    height: 0px;
+	border-radius: 20px;
+    padding-bottom: 320px;
+	width: 80%;
+    overflow: hidden;
+	opacity: 1;
+	margin-right: 30px;	
+	/* box-shadow: -0.2rem -0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.5) inset;
+	filter: drop-shadow(0.3rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5)); */
+	transition: transform 1.4s, opacity 1s,z-index 0.5s;
+}
+.album-item_img img{
+    height: auto;  
+    width: 100%;
+	border-radius: 20px;
+	
+}
+.lobby_buttom-next,
+.lobby_buttom-back{
+	display: flex;
+	position: absolute;	
+	align-items: center;
+	justify-content: center;
+	transform: translateY(-10%);
+	z-index: 222;	
+	width: 100%;	
+}
+.lobby_buttom-next button,
+.lobby_buttom-back button{
+	border: none;
+	background-color: #e2dbdb99;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	font-size: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #333;
+}
+.lobby_buttom-next .next{
+	position: absolute;
+	opacity:0;
+	transition: 0.5s;
+	left:519px;
+	top:145px;
+}
+.lobby_buttom-back .back{
+	position: absolute;
+	opacity: 0;
+	left: 12px;
+	top:145px;
+	transition: 0.5s;
+}
+.lobby:hover button{
+	opacity: 1;
+}
+.album-item:nth-child(1) .album-item_img{
+	z-index: 0;
+	transform:scale(1) translate(0,0);
+}
+.album-item:nth-child(2) .album-item_img{
+	z-index: 1;
+	transform:scale(0.45) translate(180%,-60%);
+}
+.album-item:nth-child(5) .album-item_img{
+
+	transform:scale(0.45) translate(180%,60%);
+}
+.album-item:nth-child(3) .album-item_img{	
+	z-index: 2;
+	transform:scale(0.45) translate(300%,-60%);
+}
+.album-item:nth-child(4) .album-item_img{
+	transform:scale(0.45) translate(300%,60%);
+}
+.album-item:nth-child(n+6) .album-item_img{
+	z-index: -1;
+	transform: scale(0.8);
+	opacity:0;
+}

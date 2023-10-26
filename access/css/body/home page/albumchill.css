@@ -1,0 +1,35 @@
+.albumchill {
+    position: relative;
+    width: 100%;  
+    margin-top: 30px;   
+    margin-bottom: 50px;
+}
+.albumchill-list{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:40px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.albumchill-item{   
+    width: 200px;
+    padding-top: 30px;
+}
+.albumchill-item_img{
+    width: 200px;
+    height: 200px;  
+    margin-bottom: 15px;
+}
+.albumchill-item_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.albumchill-item_profile p{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

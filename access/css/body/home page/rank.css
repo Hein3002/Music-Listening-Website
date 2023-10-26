@@ -1,0 +1,134 @@
+
+
+
+/* -------------------------------------------rank----------------------- */
+.rank{
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;	
+	margin-top: 50px;
+	padding: 20px;
+}
+.rank-item{
+	background: var(--back-color-item) !important;
+}
+.rank-item:hover{
+	border: solid thin rebeccapurple;
+	transform: translateY(-5px);	
+}
+.rank-item_rating{
+	width: 50px;
+	height: 70px;
+	color: transparent;
+	-webkit-text-stroke:2px rgb(128, 23, 193);	
+	font-size:32px;
+	font-weight: 900;
+	line-height: 1;
+	font-family: "Roboto",sans-serif;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.rank-active{
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	flex: 1;
+	padding-left: 20px;
+}
+.rank-active_thumb img{
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	margin-bottom: 25px;
+	border-radius: 50%;	
+	border: 3px solid rebeccapurple;
+	filter: drop-shadow(0 0 0.3rem rgb(161, 104, 219));
+}
+.rank-active-profile{
+	margin-bottom: 45px;
+}
+.rank-active-profile h2{
+	font-size: 17px;
+	margin-bottom: 4px;
+	color: aliceblue;
+}
+.rank-active-profile p{
+	font-size: 12px;
+	text-align: center;
+	font-weight: 500;
+}
+.rank-more{
+	border: 2px solid rebeccapurple;
+	border-radius: 20px;
+	font-size: 14px;
+	color: aliceblue;
+	padding: 5px 10px;
+	transform: translateX(400%);
+}
+.rank-active{
+	flex: 1;
+}
+.rank-active_rewind {	
+	width: 100%;
+	margin-bottom: 20%;
+}
+.rank-active_rewind input{
+	width: 100%;
+}
+.rank-active_rewind .timeline{
+	display: flex;
+	justify-content: space-between;
+	font-size: 13px;
+	font-weight: 500;
+}
+.rank-active_control{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.rank-active_control .control-btn{
+	display: flex;
+	justify-content: center;	
+	flex: 1;
+}
+.rank-active_control .control-btn .play{
+	margin: 0 30px;
+}
+.rank-active_control .control-btn .play ion-icon {
+	font-size: 40px;
+	color: rebeccapurple;
+}
+.rank-weekly{
+	margin-top: 20px;
+	display: flex;	
+	gap:35px;
+}
+.rank-weekly_vn,
+.rank-weekly_usuk,
+.rank-weekly_kpop{
+	flex:1;
+	text-align: center;
+	padding: 20px;		
+	border-radius: 10px;
+	color: aliceblue;
+}
+.rank-weekly_vn{
+	background: linear-gradient(90deg, rgba(92,70,156,0.7932422969187676) 0%, rgba(92,70,156,1) 23%, rgba(92,70,156,1) 76%, rgba(92,70,156,0.7988445378151261) 100%);
+}
+.rank-weekly_usuk{
+	background: linear-gradient(90deg, rgba(158,221,255,0.7484243697478992) 0%, rgba(158,221,255,0.9164915966386554) 23%, rgba(158,221,255,0.9248949579831933) 76%, rgba(158,221,255,0.6587885154061625) 100%);
+}
+.rank-weekly_kpop{
+	background: linear-gradient(90deg, rgba(255,105,105,0.6839985994397759) 0%, rgba(255,105,105,0.8996848739495799) 23%, rgba(255,105,105,0.891281512605042) 76%, rgba(255,105,105,0.6980042016806722) 100%);
+}
+.rank-weekly h3{
+	padding-top:18px ;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}

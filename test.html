@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            width: 100%;
+            height: 100%;
+            perspective: 1200px;
+            /* Xác định khoảng cách quan sát */
+        }
+
+        .box {
+
+            padding-left:300px;;
+        }
+
+        img {
+            width: 100px;
+            transition: all 1s;
+            transform:translateX(20px);
+            transform-origin: top center;
+        }
+
+        .container:hover img {
+            transform: rotateY(45deg) rotateX(45deg);
+            /* Khi di chuột vào, hộp quay về vị trí ban đầu */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="PicsArt_10-29-09.18.01.png" alt="">
+        </div>
+    </div>
+</body>

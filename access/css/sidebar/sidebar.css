@@ -1,0 +1,39 @@
+.sidebar{
+    width: 240px;
+    flex-shrink: 0;
+    padding: 90px 0;
+    height: calc(100% - 90px);   
+    background: var(--back-color);
+}
+.sidebar-wrallpper{
+    height: 100%;
+    width: 100%;
+}
+.sidebar-nav{
+    width: 100%;
+}
+.sidebar-thumb{
+    position: fixed;
+    top:0;
+    width: 240px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+.sidebar-thumb img{
+    width: 90px;
+    height: 80px;
+    object-fit:cover;
+}
+.sidebar-nav .sidebar-nav_main{
+    position: relative;
+}
+.main_listitem .main-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: aliceblue;   
+}
