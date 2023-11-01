@@ -1,5 +1,6 @@
 .album-detail{   
    width: 100%;
+   display: none;
 }
 .album-left{
     width: 24%;
@@ -29,110 +30,7 @@
 
     position: relative;  
 }
-.media-playlist{
-   flex-grow: 1;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-}
-.media-playlist_checkbox{ 
-    z-index: 3; 
-    left: 4px;
-    visibility: hidden; 
-    transform: translateX(15px);
-}
-.media-playlist_checkbox label input{
-    display: none;
-}
-.media-playlist_checkbox label{
-    background-color: rebeccapurple;
-    padding: 6px;
-    display: inline-block;
-    position: relative;    
-}
-.media-playlist_item{
-    margin-top: 3px;
-    display: flex;
-    flex: 1;    
-    align-items: center;
-    transition: all 0.3s;
-    padding: 10px 0;
-    border-bottom: thin solid rgba(239, 174, 240, 0.2);
-}
-.media-content_left{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    position: relative;
-    flex-shrink: 0;
-}
-.media-content_left  .song-icon{  
-    visibility: visible;
-}
-.song-icon ion-icon{
-    font-size: 17px;
-}
-.media-content_left .song-thumb{
-    height: 0;
-    width: 50px;
-    padding-bottom: 50px; 
-    border-radius: 8px;     
-    transform: translateX(10px);
-}
-.media-content_left .song-thumb img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-}
-.media-content_left .song-profile{
-    flex: 1;
-    margin-left:20px;
-}
-.song-profile a{
-    font-size: 13px;
-    font-weight: 500;
-}
-.meida-content_center{
-    flex-grow: 1;
-    flex-basis: 0;
-}
-.meida-content_center span{
-    font-size: 13px;
-    font-weight: 500;
-}
-.media-content_right{
-    display: flex;
-    gap: 30px;
-}
-.song-hover_item{
-    display: none;
-}
-.media-content_right .song-hover_item .level{
-    display: flex;
-    gap: 30px;   
-}
-.media-content_right .song-time{
-    height: 20px;
-    font-size: 14px;
-    font-weight: 500;
-}
-.song-hover_item .level button ion-icon {
-    font-size: 20px;
-}
-.media-playlist_item:hover .song-hover_item{
-    display: block;
-}
-.media-playlist_item:hover {
-    background: var(--back-color-item);
-    transform: translateY(-3px);
-}
-.media-playlist_item:hover .media-playlist_checkbox{
-    visibility: visible;
-}
-.media-playlist_item:hover .song-icon{
-    visibility: hidden;
-}
+
 .album-profile{
     display: flex;
     flex-direction: column;

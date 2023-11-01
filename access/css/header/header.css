@@ -1,13 +1,13 @@
 header {
     position: fixed;
-    height: 65px;
-    left: 290px;
+    height: 75px;
+    left: 250px;
     top: 0;
     right: 0;
-    background:var(--back-color);
+    background:transparent;
     z-index: 9999;
     display: flex;
-    opacity: 0.8;
+    border-radius: 10px;
 }
 
 .header-left,

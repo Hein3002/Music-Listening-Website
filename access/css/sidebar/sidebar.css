@@ -3,7 +3,8 @@
     flex-shrink: 0;
     padding: 90px 0;
     height: calc(100% - 90px);   
-    background: var(--back-color);
+    background: linear-gradient( to bottom right,#170f2399, #111d3dee);
+
 }
 .sidebar-wrallpper{
     height: 100%;

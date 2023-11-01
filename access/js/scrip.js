@@ -75,16 +75,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 var album_detial=document.querySelector(".album-detail");
 var home=document.querySelector(".home-page-content");
+var main = document.querySelector("main");
 var item1=document.querySelector(".main-item1");
 var item2 =document.querySelector(".main-item2");
-item1.addEventListener("click", function () {
-  album_detial.style.display = "none";
-  home.style.display = "block";
-  item1.style.cursor = "pointer";
+item1.addEventListener("click", function () {  
+  home.style.display="block";
+  album_detial.style.display="none";
 });
-
-item2.addEventListener("click", function () {
-  home.style.display = "none";
-  album_detial.style.display = "block";
-  item2.style.cursor = "pointer"; // Đổi item1 thành item2
+item2.addEventListener("click", function () {  
+  home.style.display="none";
+  album_detial.style.display="block";
 });

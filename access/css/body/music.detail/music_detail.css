@@ -1,0 +1,66 @@
+.music-deltail{
+    position: relative;
+    width: 100%;    
+}
+.music-detail_left{
+    position: sticky;
+    width: 35%;
+    float: left;   
+}
+.music-detail_right{
+    margin-left: 0px;
+}
+.music-detail_left_top{
+    top:20px;
+    width: 206px;
+    height: 207px;
+    display: flex;
+    position: relative;
+}
+.music-top_thumb{
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    transition:5s;
+    transform-origin: center center;   
+}
+.music-top_thumb img{
+    display: block;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    padding: 33px 18px 20px 32px;
+    margin-left: 5px;
+}
+.music-top_thumb span{
+    position: absolute;
+    width: 206px;
+    height: 205px;
+    background: url("/access/image/coverall.png");
+    background-position: -140px -580px;
+    
+
+}
+.music-detail_left_top:hover .music-top_thumb{
+    transform: rotate(360deg);
+}
+.music-detail_left_top:hover .music-top_tonearm img{
+    transform: rotate(20deg);
+   
+}
+.music-top_tonearm{
+    position: absolute;
+    inset: 0;
+
+}
+.music-top_tonearm img{ 
+    height: 75%;
+    object-fit: cover;
+    position: absolute;
+    right: -58px;
+    transform: rotate(7deg);
+    transform-origin: top center;
+    transition: 1s;
+    filter: drop-shadow(0 0 0.05rem rgb(106, 70, 143));
+}
