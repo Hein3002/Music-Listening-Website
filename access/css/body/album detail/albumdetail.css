@@ -56,14 +56,14 @@
     background-color:#9b4de0;
     color: aliceblue;
 }
-.album-profile .profile-action .level{
+ .level{
     display: flex;
     margin-top: 10px;
     justify-content: center;
     gap: 20px;
 }
-.album-profile .profile-action .level .level-item_heart ,
-.album-profile .profile-action .level .level-item_more {
+ .level .level-item_heart ,
+ .level .level-item_more {
     background: hsla(0,0%,100%,0.1);
     padding: 10px 10px 6px 10px;
     border-radius:50%;

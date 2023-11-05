@@ -86,3 +86,64 @@ item2.addEventListener("click", function () {
   home.style.display="none";
   album_detial.style.display="block";
 });
+
+
+
+const btnPlay =document.querySelector('.music-detail_left_bottom .music-profile button');
+const canvas = document.querySelector('.music-detail_right_visualazer canvas');
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+const ctx=canvas.getContext('2d');
+let audioSoure;
+let analyser;
+btnPlay.addEventListener('click',function(){
+    const audio =document.querySelector('.music-detail_right_visualazer canvas audio');  
+    const audioCtx=new (window.AudioContext || window.webkitAudioContext)();  
+    audio.play();
+    audioSoure=audioCtx.createMediaElementSource(audio);
+    analyser=audioCtx.createAnalyser();
+    audioSoure.connect(analyser);
+    analyser.connect(audioCtx.destination);
+    analyser.fftSize=256;
+    const docaomoisongnhac=analyser.frequencyBinCount;//chua một nửa số ffsize dụng để chứa độ cao của tất cả các thanh nhạc
+    const mangdocao=new Uint8Array(docaomoisongnhac);//chuyển các giá trị lấy dc từ docaomoisongnhac thành kiểu dữ liệu unit8
+
+    const dorong1songnhac=canvas.width/2/docaomoisongnhac;
+    let docao1songnhac;
+    let x;
+    function animate()
+    {   
+        x=0;
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        analyser.getByteFrequencyData(mangdocao);
+        drawVisualazerX(x,mangdocao,docaomoisongnhac,docao1songnhac,dorong1songnhac);            
+        requestAnimationFrame(animate);       
+    }
+    animate();
+
+    function drawVisualazerX(x,mangdocao,docaomoisongnhac,docao1songnhac,dorong1songnhac){
+     for(let i=0;i<docaomoisongnhac;i++){
+      const randomValue = Math.random() < 0.5 ? 1.5 : 1.6
+      docao1songnhac=mangdocao[i]/randomValue;
+      const red =50+(i*2);
+      const green = 0;
+      const blue =110+(i*2) ;
+      ctx.fillStyle = 'rgb(' + red + ',' + green + ',' + blue + ')';          
+      ctx.fillRect(canvas.width/2 - x,canvas.height/2-docao1songnhac,dorong1songnhac,docao1songnhac);
+      ctx.fillRect(canvas.width/2 - x,canvas.height/2,dorong1songnhac,docao1songnhac);
+      x+=(2*dorong1songnhac);
+      
+    }
+     for(let i=0;i<docaomoisongnhac;i++){
+      const randomValue = Math.random() < 0.5 ? 1.5 : 1.6
+      docao1songnhac=mangdocao[i]/randomValue;
+      const red = 50+(i*2);
+      const green = 0 ;
+      const blue =  110+(i*2); 
+      ctx.fillStyle = 'rgb(' + red + ',' + green + ',' + blue + ')';         
+      ctx.fillRect(x-canvas.width/2,canvas.height/2-docao1songnhac,dorong1songnhac,docao1songnhac);
+      ctx.fillRect(x-canvas.width/2,canvas.height/2,dorong1songnhac,docao1songnhac);
+      x+=(2*dorong1songnhac);      
+  }      
+  } 
+})

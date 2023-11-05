@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title>   
     <style>
-        span{
-            display: block;
-            width: 100%;
-            height: 100vh;
-            background: url("access/image/coverall.png");
-            background-repeat: no-repeat;
-            background-size:500px;
-            background-position: center center;
-        }
+       #container {
+        position: relative;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+       }
+       #canvas1 {
+        position: absolute;
+        inset: 0;
+        background: rgb(153, 146, 146);
+        width: 100%;
+        height: 50%;
+       }
+       .audio1 {
+        position: absolute;
+        top: 0;
+        left: 0;        
+        display: block;
+       }
     </style>
 </head>
 <body>
-    <span></span>
+    <div id="container">
+        <canvas id="canvas1"></canvas>
+        <audio class="audio1"  >
+            <source src="y2mate.com - The Black Eyed Peas  My Humps Lyrics.mp3">
+
+        </audio>
+        <script src="test.js"></script>
+    </div>
 </body>
 </html>
