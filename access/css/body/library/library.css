@@ -1,0 +1,91 @@
+.library{
+    display: none;
+}
+.library h1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: xx-large;
+    
+}
+.library_icon ion-icon{
+    display: flex;
+    align-items: center;
+    font-size: 38px;
+}
+.library-playlist-title{
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    gap: 5px;
+    margin-top: 30px;    
+}
+.library-playlist-title h3{
+    font-weight: 600;
+}
+.library-playlist-title span ion-icon{
+    width: 25px;
+    height: 25px;
+    background-color:  hsla(0,0%,100%,0.1);
+    border-radius: 50%;
+}
+.library-playlist_content{
+    margin-top: 20px;
+}
+.library-playlist_content_listitem{
+    display: flex;
+    align-items: center;
+}
+.library-playlist-item_img{
+    width: 50%;
+    height: 0;
+    padding-bottom:50%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.library-playlist-item_img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.library-playlist-item_profile{
+    margin-top: 10px;    
+}
+.item-profile_nameplaylist a{
+    color: aliceblue;
+}
+.item-profile_nameplaylist p{
+    font-size: 13px;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+.library-bottom-section{
+    margin-top: 70px;
+}
+.bottom-section-option{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.bottom-section-option span{
+    font-size: 14px;
+    font-weight: 500;
+    color: aliceblue;
+}
+.bottom-section-title{
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+.bottom-section-title button{
+    font-size: 13px;
+	color: #cccbcb;
+	font-weight: 500;
+	border: solid thin rebeccapurple;
+	padding: 8px 10px;
+	border-radius: 50px;
+}

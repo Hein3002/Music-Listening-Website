@@ -4,7 +4,7 @@
     padding: 90px 0;
     height: calc(100% - 90px);   
     background: linear-gradient( to bottom right,#170f2399, #111d3dee);
-
+    
 }
 .sidebar-wrallpper{
     height: 100%;
@@ -29,12 +29,13 @@
 .sidebar-nav .sidebar-nav_main{
     position: relative;
 }
-.main_listitem .main-item{
+.main_listitem li{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 10px 0;
+    justify-content: flex-start;
+    padding: 10px 30px;
     font-weight: 500;
     font-size: 14px;
-    color: aliceblue;   
+    color: aliceblue;  
+    gap: 10px;     
 }

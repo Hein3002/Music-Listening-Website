@@ -11,46 +11,46 @@
 	perspective: 0;	
 	margin-top: 20px;
 }
-#gallery figure:nth-child(1) {
+#gallery a figure:nth-child(1) {
 	--duration: 1.8s;
 	--pin-color: hotpink;
 }
-#gallery figure:nth-child(2) {
+#gallery a figure:nth-child(2) {
 	--duration: 1.3s;
 	--pin-color: magenta;
 }
-#gallery figure:nth-child( 3) {
+#gallery a figure:nth-child( 3) {
 	--duration: 1.5s;
 	--pin-color: orangered;
 }
-#gallery figure:nth-child( 4) {
+#gallery a figure:nth-child( 4) {
 	--duration: 1.1s;
 	--pin-color: darkorchid;
 }
-#gallery figure:nth-child( 5) {
+#gallery a figure:nth-child( 5) {
 	--duration: 1.6s;
 	--pin-color: deeppink;
 }
-#gallery figure:nth-child( 6) {
+#gallery a figure:nth-child( 6) {
 	--duration: 1.2s;
 	--pin-color: mediumvioletred;
 }
-#gallery figure:nth-child(3n) {
+#gallery a figure:nth-child(3n) {
 	--angle: 3deg;
 }
-#gallery figure:nth-child(3n + 1) {
+#gallery a figure:nth-child(3n + 1) {
 	--angle: -3.3deg;
 }
-#gallery figure:nth-child(3n + 2) {
+#gallery a figure:nth-child(3n + 2) {
 	--angle: 2.4deg;
 }
-#gallery figure:nth-child(odd) {
+#gallery a figure:nth-child(odd) {
 	--direction: alternate;
 }
-#gallery figure:nth-child(even) {
+#gallery a figure:nth-child(even) {
 	--direction: alternate-reverse;
 }
-#gallery figure {	   
+#gallery a figure {	   
 	position: relative;
 	display: inline-block;
 	margin: var(--adjust-size);
@@ -72,7 +72,7 @@
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-#gallery.active figure {
+#gallery a figure.active  {
 	animation-duration: var(--duration), 1.5s;
 	animation-delay: var(--delay),
 		calc(var(--delay) + var(--duration) * var(--count));
@@ -82,7 +82,7 @@
 	animation-fill-mode: both;
 	animation-name: swing, swingEnd;
 }
-#gallery figure:after {
+#gallery a figure:after {
 	position: absolute;
 	top: 0.22rem;
 	left: 50%;

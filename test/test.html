@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History PushState Example</title>
+</head>
+
+<body>
+    <button onclick="changePage('page1')">Load Page 1</button>
+    <button onclick="changePage('page2')">Load Page 2</button>
+
+    <div id="content">
+        <!-- Nội dung chính sẽ được thay đổi -->
+    </div>
+
+    <script>
+        function changePage(pageName) {
+            // Simulate fetching content from the server
+            var content = getPageContent(pageName);
+
+            // Update the content
+            document.getElementById('content').innerHTML = content;
+
+            // Change the URL without reloading the page
+            history.pushState({}, '', '/' +'zingmp3'+'/'+ pageName);
+        }
+
+        function getPageContent(pageName) {
+            // Giả sử có một đoạn mã để lấy nội dung từ server
+            // Trong ví dụ này, chúng ta chỉ trả về một chuỗi đơn giản
+            return `<p>This is ${pageName} content.</p>`;
+        }
+
+        // Sự kiện popstate xảy ra khi người dùng nhấn nút quay lại hoặc tiến lên trong trình duyệt
+        window.addEventListener('popstate', function (event) {
+            var path = location.pathname.replace('/', ''); // Lấy phần path từ URL và loại bỏ dấu '/'
+            changePage(path); // Gọi hàm changePage để tải lại nội dung tương ứng với đường dẫn mới
+        });
+    </script>
+</body>
+
+</html>

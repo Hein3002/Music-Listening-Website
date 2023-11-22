@@ -31,7 +31,7 @@ p {
 	line-height: 1;
 }
 a {
-	color: crimson;
+	color: #999;
 	text-decoration: none;
 }
 /* ---------------------------custom scroll------------------------------- */
@@ -67,7 +67,7 @@ a {
 	align-items: center;
 	font-size: 12px;
 	font-weight: 600;
-	color: #999;
+
 }
 .title a ion-icon{
 	font-size: 15px;
@@ -82,13 +82,19 @@ button{
 	background-color: transparent;
 	line-height: 0;
 	border: 0;
-	color: #999;
+	color: #eee;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	
 }
+
 a{
 	color: #999;	
+}
+a:hover{
+	color: #9b4de0;
+	text-decoration: underline;
 }
 ion-icon{
 	font-size: 22px;
@@ -137,7 +143,6 @@ ion-icon{
 	flex-direction: column;
 	justify-content: center;
 	height: 70px;
-	flex: 1;
 }
 .item_profile h4{
 	margin-bottom: 5px;	
@@ -145,7 +150,7 @@ ion-icon{
 	font-size: 14px;
 	font-weight: 500;
 }
-.item_profile span{
+.item_profile a{
 	display: block;
 	font-size: 12px;
 	margin-bottom: 5px;
@@ -200,7 +205,7 @@ ion-icon{
 	 width: 50px;
 	 padding-bottom: 50px; 
 	 border-radius: 8px;     
-	 transform: translateX(10px);
+	 transform: translateX(20px);
  }
  .media-content_left .song-thumb img{
 	 width: 100%;
@@ -210,7 +215,7 @@ ion-icon{
  }
  .media-content_left .song-profile{
 	 flex: 1;
-	 margin-left:20px;
+	 margin-left:40px;
  }
  .song-profile a{
 	 font-size: 13px;
@@ -256,6 +261,63 @@ ion-icon{
  .media-playlist_item:hover .song-icon{
 	 visibility: hidden;
  }
+ /* -----------------------------control------------------------------- */
+ .active_control{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+.active_control .control-btn{
+	display: flex;
+	justify-content: center;	
+	flex: 1;
+}
+.active_control .control-btn .play{
+	margin: 0 30px;
+}
+.active_control .control-btn .play ion-icon {
+	font-size: 40px;
+	color: rebeccapurple;
+}
+/* -------------------level------------------------ */
+.level{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 20px;
+}
+ .level .level-item {
+    background: hsla(0,0%,100%,0.1);
+    padding: 10px;
+    border-radius:50%;
+    color: #9b4de0;
+	width: 42px;
+	height: 42px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* ---------------------------custom input:range----------------------------; */
+input[type="range"] {
+	-webkit-appearance: none;
+	margin-right: 15px;
+	height: 4px;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 5px;
+	background-image: linear-gradient(rebeccapurple, rebeccapurple);
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background: rebeccapurple;
+	cursor: ew-resize;
+  }  
+
 /* ------------------------------ANIMATINON SHOWCONTEN------------- */
 @keyframes showContentIn{
 	from{

@@ -56,16 +56,3 @@
     background-color:#9b4de0;
     color: aliceblue;
 }
- .level{
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-    gap: 20px;
-}
- .level .level-item_heart ,
- .level .level-item_more {
-    background: hsla(0,0%,100%,0.1);
-    padding: 10px 10px 6px 10px;
-    border-radius:50%;
-    color: #9b4de0;
-}

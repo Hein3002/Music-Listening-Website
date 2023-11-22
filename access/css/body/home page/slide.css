@@ -31,15 +31,15 @@
     overflow: hidden;
 	opacity: 1;
 	margin-right: 30px;	
-	box-shadow: -0.2rem -0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.5) inset;
 	filter: drop-shadow(0.3rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5));
 	transition: transform 1.4s, opacity 1s,z-index 0.5s;
+	max-width: 640px;
 }
 .album-item_img img{
     height: auto;  
     width: 100%;
 	border-radius: 20px;
-	
+	object-fit: cover;
 }
 .lobby_buttom-next,
 .lobby_buttom-back{

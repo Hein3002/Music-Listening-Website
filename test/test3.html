@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My SPA</title>
+</head>
+<body>
+    <header>
+        <!-- Header content -->
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="loadPage('test')">Zing Chart</a></li>
+            <!-- Thêm các mục menu khác -->
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <!-- Nội dung chính sẽ được thay đổi -->
+    </main>
+
+    <script>
+        // Hàm để tải nội dung của trang và cập nhật main-content
+        function loadPage(pageName) {         
+            fetch(pageName + '.html') // Gửi yêu cầu HTTP GET để lấy nội dung của trang theo đường dẫn pageName
+                .then(response => response.text()) // Chuyển đổi phản hồi thành văn bản
+                .then(html => {
+                    document.getElementById('main-content').innerHTML = html; // Cập nhật nội dung của phần main-content
+                    // Thay đổi URL mà không làm tải lại trang, để thể hiện đường dẫn mới trong thanh địa chỉ
+                    history.pushState({}, '', '/' + pageName);                 
+                })
+                .catch(error => console.error('Fetch error:', error)); // Xử lý lỗi trong quá trình tải trang       
+        }
+        // Sự kiện popstate xảy ra khi người dùng thực hiện việc điều hướng ngược lại hoặc tiến tới
+        window.addEventListener('popstate', function (event) {
+            var path = location.pathname.replace('/', ''); // Lấy phần path từ URL và loại bỏ dấu '/'
+            loadPage(path); // Gọi hàm loadPage để tải lại nội dung tương ứng với đường dẫn mới
+        });
+
+        // Sự kiện onload xảy ra khi trang được tải hoàn toàn
+        window.onload = function () {
+            // Kiểm tra xem URL có chứa '/test2' không khi trang được tải
+            if (location.pathname.includes('/test2')) {
+                loadPage('test2.html'); // Nếu có, gọi hàm loadPage để tải trang 'test2.html'
+            }
+        }
+    </script>
+</body>
+</html>

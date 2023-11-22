@@ -85,24 +85,7 @@
 	font-size: 13px;
 	font-weight: 500;
 }
-.rank-active_control{
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.rank-active_control .control-btn{
-	display: flex;
-	justify-content: center;	
-	flex: 1;
-}
-.rank-active_control .control-btn .play{
-	margin: 0 30px;
-}
-.rank-active_control .control-btn .play ion-icon {
-	font-size: 40px;
-	color: rebeccapurple;
-}
+
 .rank-weekly{
 	margin-top: 20px;
 	display: flex;	

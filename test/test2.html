@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="1000px" height="500" style="border:1px solid grey"></canvas>
+</body>
+<script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    const data=[200,100,50,70,200,100,90,80,200]
+    const start_point=0    
+    const distance=canvas.width/data.length
+    const start_value=data[0]    
+    ctx.beginPath();   
+    ctx.moveTo(start_point,start_value)
+    data.forEach((element,index) =>{
+        const new_distance=start_point+(distance*(index+1))
+        ctx.lineTo(new_distance,element)
+    })
+    ctx.strokeStyle='red'
+    ctx.stroke();
+    </script>
+</html>
