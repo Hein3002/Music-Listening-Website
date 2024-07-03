@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="access/css/body/library/library.css">
     <link rel="stylesheet" href="access/css/body/album detail/albumdetail.css">
     <link rel="stylesheet" href="access/css/body/music.detail/music_detail.css">
+    <link rel="stylesheet" href="access/css/body/artist detail/artist_detail.css">
     <link rel="stylesheet" href="access/css/playing now/playingnow.css">
     <link rel="stylesheet" href="access/css/body/player queue/player _queue.css">
     <link rel="stylesheet" href="access/css/body/song chart/song_chart.css">
@@ -49,7 +50,7 @@
                     </div>
                     <div class=" sidebar-nav sidebar-nav_main">
                         <ul class="main_listitem">
-                            <li class=" main-item main-item1">
+                            <li onclick="homepage()" class=" main-item main-item1">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M3.25 12C3.25 7.16751 7.16751 3.25 12 3.25C16.8325 3.25 20.75 7.16751 20.75 12C20.75 16.8325 16.8325 20.75 12 20.75C7.16751 20.75 3.25 16.8325 3.25 12ZM12 1.75C6.33908 1.75 1.75 6.33908 1.75 12C1.75 17.6609 6.33908 22.25 12 22.25C17.6609 22.25 22.25 17.6609 22.25 12C22.25 6.33908 17.6609 1.75 12 1.75ZM9.25 12C9.25 10.4812 10.4812 9.25 12 9.25C13.5188 9.25 14.75 10.4812 14.75 12C14.75 13.5188 13.5188 14.75 12 14.75C10.4812 14.75 9.25 13.5188 9.25 12ZM12 7.75C9.65279 7.75 7.75 9.65279 7.75 12C7.75 14.3472 9.65279 16.25 12 16.25C14.3472 16.25 16.25 14.3472 16.25 12C16.25 9.65279 14.3472 7.75 12 7.75Z"
@@ -57,7 +58,7 @@
                                 </svg>
                                 <span>Khám phá</span>
                             </li>
-                            <li class=" main-item main-item2 ">
+                            <li onclick="librarys()" class=" main-item main-item2 ">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M6.5 2.75C6.08579 2.75 5.75 3.08579 5.75 3.5C5.75 3.91421 6.08579 4.25 6.5 4.25H17.5C17.9142 4.25 18.25 3.91421 18.25 3.5C18.25 3.08579 17.9142 2.75 17.5 2.75H6.5ZM3 9.5C3 7.42893 4.67893 5.75 6.75 5.75H17.25C19.3211 5.75 21 7.42893 21 9.5V17.5C21 19.5711 19.3211 21.25 17.25 21.25H6.75C4.67893 21.25 3 19.5711 3 17.5V9.5ZM6.75 7.25C5.50736 7.25 4.5 8.25736 4.5 9.5V17.5C4.5 18.7426 5.50736 19.75 6.75 19.75H17.25C18.4926 19.75 19.5 18.7426 19.5 17.5V9.5C19.5 8.25736 18.4926 7.25 17.25 7.25H6.75ZM13.666 8.87596C13.4359 8.72253 13.14 8.70823 12.8961 8.83874C12.6522 8.96926 12.5 9.2234 12.5 9.5V13.0499C12.125 12.8581 11.7001 12.75 11.25 12.75C9.73122 12.75 8.5 13.9812 8.5 15.5C8.5 17.0188 9.73122 18.25 11.25 18.25C12.6911 18.25 13.8733 17.1415 13.9905 15.7307C13.9967 15.6916 14 15.6515 14 15.6107V15.5V10.9014L15.084 11.624C15.4286 11.8538 15.8943 11.7607 16.124 11.416C16.3538 11.0714 16.2607 10.6057 15.916 10.376L13.666 8.87596ZM12.5 15.5C12.5 14.8096 11.9404 14.25 11.25 14.25C10.5596 14.25 10 14.8096 10 15.5C10 16.1904 10.5596 16.75 11.25 16.75C11.9404 16.75 12.5 16.1904 12.5 15.5Z"
@@ -65,7 +66,7 @@
                                 </svg>
                                 <span>Thư viện</span>
                             </li>
-                            <li class=" main-item main-item2 ">
+                            <li onclick="songchart()" class=" main-item main-item3 ">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M1.76078 11.5281C2.0086 6.08576 6.49865 1.75 12.0018 1.75C14.0559 1.75 15.971 2.35489 17.5759 3.39648C17.9234 3.62198 18.0222 4.08645 17.7967 4.4339C17.5712 4.78136 17.1068 4.88023 16.7593 4.65473C15.3901 3.76614 13.7574 3.25 12.0018 3.25C7.30422 3.25 3.47074 6.95138 3.25923 11.5963C3.24039 12.0101 2.88968 12.3303 2.47589 12.3114C2.06211 12.2926 1.74194 11.9419 1.76078 11.5281ZM21.5275 11.6871C21.9413 11.7057 22.2617 12.0563 22.243 12.4701C21.998 17.9149 17.5067 22.2536 12.0018 22.2536C9.89696 22.2536 7.93821 21.6184 6.30952 20.5292C5.9652 20.299 5.87274 19.8332 6.103 19.4889C6.33327 19.1446 6.79905 19.0521 7.14337 19.2824C8.53298 20.2117 10.203 20.7536 12.0018 20.7536C16.7009 20.7536 20.5354 17.0497 20.7445 12.4026C20.7632 11.9888 21.1137 11.6685 21.5275 11.6871ZM20.7535 8.05986C20.7535 7.40256 20.2207 6.86972 19.5634 6.86972C18.9061 6.86972 18.3732 7.40256 18.3732 8.05986C18.3732 8.71715 18.9061 9.25 19.5634 9.25C20.2207 9.25 20.7535 8.71715 20.7535 8.05986ZM19.5634 5.36972C21.0491 5.36972 22.2535 6.57413 22.2535 8.05986C22.2535 9.54558 21.0491 10.75 19.5634 10.75C19.1208 10.75 18.7031 10.6431 18.3349 10.4537L15.5083 14.5112C15.3814 14.6933 15.1803 14.8099 14.9592 14.8295C14.738 14.8491 14.5196 14.7698 14.3626 14.6128L13.3637 13.6139L12.2257 15.3202C12.0906 15.5227 11.8658 15.6471 11.6225 15.6538C11.3793 15.6605 11.1478 15.5488 11.0018 15.3542L9.05228 12.7558L6.78385 15.0242C6.75187 15.0562 6.71772 15.0847 6.68188 15.1097C6.80299 15.4073 6.86972 15.7328 6.86972 16.074C6.86972 17.4877 5.72363 18.6338 4.30986 18.6338C2.89609 18.6338 1.75 17.4877 1.75 16.074C1.75 14.6602 2.89609 13.5141 4.30986 13.5141C4.83856 13.5141 5.32983 13.6744 5.73772 13.949L8.60299 11.0837C8.75671 10.93 8.96957 10.8506 9.18642 10.8659C9.40327 10.8813 9.60278 10.9901 9.73324 11.164L11.5657 13.6064L12.6234 12.0207C12.748 11.8338 12.9499 11.7126 13.1735 11.6905C13.3971 11.6684 13.6188 11.7477 13.7776 11.9065L14.7897 12.9186L17.2351 9.40829C17.005 9.01185 16.8732 8.55124 16.8732 8.05986C16.8732 6.57413 18.0777 5.36972 19.5634 5.36972ZM4.30986 15.0141C4.8952 15.0141 5.36972 15.4886 5.36972 16.074C5.36972 16.6593 4.8952 17.1338 4.30986 17.1338C3.72452 17.1338 3.25 16.6593 3.25 16.074C3.25 15.4886 3.72452 15.0141 4.30986 15.0141Z"
@@ -82,34 +83,29 @@
             </div>
             <header>
                 <div class="header-left">
-                    <button><ion-icon name="arrow-back-outline"></ion-icon></button>
+                    <button onclick="homepage()"><ion-icon name="arrow-back-outline"></ion-icon></button>
                     <button><ion-icon name="arrow-forward-outline"></ion-icon></button>
                     <div class="header-left_search">
                         <button><ion-icon name="search-outline"></ion-icon></button>
-                        <input type="text" name="" id="" placeholder="Tìm kiếm bài hát, nghệ sĩ, bài hát....">
+                        <input oninput="seachSongInLybrary()" type="text" name="" id="" placeholder="Tìm kiếm bài hát, nghệ sĩ, bài hát....">
                     </div>
                 </div>
                 <div class="header-right">
                     <div class="header-right_setting"><ion-icon name="settings-outline"></ion-icon></div>
                     <div class="header-right_avt">
-
                     </div>
                 </div>
             </header>
             <div class="main-page">
                 <main class="scroll">
+                    
                     <div class="container home-page-content">
                         <div class="container">
                             <div class="lobby">
-                                <div class="lobby_buttom-next">
+                                <div  class="lobby_buttom-next">
                                     <button class="next"><ion-icon name="chevron-forward-outline"></ion-icon></button>
                                 </div>
-                                <div class="lobby_listitemalbum">
-                                    <a href="" class="album-item album-item0">
-                                        <div class="album-item_img ">
-                                            <img src="${album.image}" alt="">
-                                        </div>
-                                    </a>
+                                <div class="lobby_listitemalbum">                                  
                                 </div>
                                 <div class="lobby_buttom-back">
                                     <button class="back"><ion-icon name="chevron-back-outline"></ion-icon></button>
@@ -124,26 +120,26 @@
                                 </div>
                             </div>
                             <div class="rank">
+
                                 <div class="title rank-title">
                                     <h2>Bảng xếp hạng</h2>
                                     <a>TẤT CẢ
                                         <ion-icon name="chevron-forward-outline"></ion-icon>
                                     </a>
                                 </div>
-                                <div class="listitem rank-list">
-                                    <button class="rank-more">Xem thêm</button>
+                                <div class="listitem rank-list">                                    
                                 </div>
-
+                                <button class="rank-more">Xem thêm</button>
                                 <div class="rank-active">
                                     <div class="rank-active_thumb">
-                                        <img src="/image/f55d4e79ce16399def97045529c62ff1.jpg" alt="">
+                                        <img src="" alt="">
                                     </div>
                                     <div class="rank-active-profile">
-                                        <h2 style="font-weight: 600;">Kiểu như tâm tình</h2>
-                                        <p>Nam Cocain</p>
+                                        <h2 style="font-weight: 600;"></h2>
+                                        <p></p>
                                     </div>
                                     <div class="rank-active_rewind">
-                                        <input type="range" name="" id="">
+                                        <input class="progress-Rank" type="range" name="" id="" value="0">
                                         <div class="timeline">
                                             <span>2:30</span>
                                             <span>3:40</span>
@@ -208,7 +204,7 @@
                                         <ion-icon name="chevron-forward-outline"></ion-icon>
                                     </a>
                                 </div>
-                                <div class="albumchill-list">
+                                <div  class="albumchill-list">
 
                                 </div>
                             </div>
@@ -218,19 +214,19 @@
                     <div class="album-detail">
                         <div class="album-left">
                             <div class="album-thumb">
-                                <img src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_jpeg/cover/d/4/a/c/d4acc6335d41bd7164173312c6123706.jpg"
+                                <img src=""
                                     alt="">
                             </div>
                             <div class="album-profile">
-                                <h3 class="profile_title">Không có bài hit nào là cái bóng phải vượt qua</h3>
-                                <div class="updateday">2-4-2023</div>
-                                <div class="artists">LyLy</div>
-                                <div class="like"><span>136</span> người thích</div>
+                                <h3 class="profile_title"></h3>
+                                <div class="updateday"></div>
+                                <div class="artists"></div>
+                                <div class="like"><span></span></div>
                                 <div class="profile-action">
                                     <button>
                                         Tiếp tục phát
                                     </button>
-                                    <div class="level">
+                                    <div style="margin-top: 20px;" class="level">
                                         <div class="level-item">
                                             <ion-icon name="heart-outline"></ion-icon>
                                         </div>
@@ -243,45 +239,7 @@
 
                         </div>
                         <div class="album-content">
-                            <div class="media-playlist">
-                                <div class="media-playlist_item">
-                                    <div class="media-content_left">
-                                        <div class="media-playlist_checkbox">
-                                            <label class="checkbox">
-                                                <input type="checkbox" name="" id="">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="song-icon">
-                                            <ion-icon name="musical-notes-outline"></ion-icon>
-                                        </div>
-                                        <div class="song-thumb">
-                                            <img src="access/image/0ebee04ce8c0e17f94a7836de9c0e2c8.jpg" alt="">
-                                        </div>
-                                        <div class="song-profile">
-                                            <div class="song-profile_name">
-                                                <span>Martini</span>
-                                            </div>
-                                            <div class="song-profile_singer">
-                                                <a href="">Van Mai Huong</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="meida-content_center">
-                                        <span>Minh tinh</span>
-                                    </div>
-                                    <div class="media-content_right">
-                                        <div class="song-hover_item">
-                                            <div class="level">
-                                                <button><ion-icon name="mic-outline"></ion-icon></button>
-                                                <button> <ion-icon name="heart-outline"></ion-icon></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="song-time">
-                                            <span>04:30</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="media-playlist">                               
                             </div>
                         </div>
                     </div>
@@ -290,14 +248,14 @@
                             <div class="music-detail_left">
                                 <div class="music-detail_left_top">
                                     <div class="music-top_thumb">
-                                        <img src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_jpeg/cover/e/a/1/2/ea120f31e33e33ce42af5ce167555958.jpg"
+                                        <img src=""
                                             alt="">
                                     </div>
                                 </div>
                                 <div class="music-detail_left_bottom">
                                     <div class="music-profile">
                                         <div class="music-action">
-                                            <button>
+                                            <button >
                                                 Tiếp tục phát
                                             </button>
                                             <div class="level">
@@ -305,7 +263,7 @@
                                                     <ion-icon name="heart-outline"></ion-icon>
                                                 </div>
                                                 <div class="level-item">
-                                                    <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>
+                                                    <ion-icon  name="ellipsis-horizontal-circle-outline"></ion-icon>
                                                 </div>
                                             </div>
                                         </div>
@@ -313,36 +271,34 @@
                                 </div>
                             </div>
                             <div class="music-detail_right">
-                                <div class="music-detail_right_top">
-                                    <h3 class="music-name">Pink Sweat Honesty</h3>
+                                <div  class="music-detail_right_top">
+                                    <h3 class="music-name"></h3>
                                     <a class="music-artists">
-                                        <span>Nghệ sĩ thể hiện:</span>
-                                        <span>Jessie Reyez</span>
+                                        <span></span>
+                                       <span></span>
                                     </a>
                                 </div>
                                 <div class="music-detail_right_visualazer">
-                                    <canvas>
-                                        <audio
-                                            src="access/audio/y2mate.com - VietsubLyrics Pink Sweat  Honesty  ft Jessie Reyez Remix.mp3"></audio>
+                                    <canvas>                                        
                                     </canvas>
                                 </div>
-                            </div>
+                            </div>                          
                         </div>
                         <div class="music-detail_artist">
                             <div class="music-detail_artist_title">
                                 <span>Nghệ Sĩ</span>
                             </div>
                             <div class="artist-list">
-                                <div class="artist-list-item">
+                                <div onclick="artistdetail()" class="artist-list-item">
                                     <div class="artist-item_left">
                                         <div class="artist-thumb">
-                                            <img src="access/image/0ebee04ce8c0e17f94a7836de9c0e2c8.jpg" alt="">
+                                            <img src="" alt="">
                                         </div>
                                     </div>
                                     <div class="artist-item_right">
                                         <div class="artist-profile">
-                                            <span>Nghệ sĩ</span>
-                                            <span class="artist-name">Pink Sweat Honesty</span>
+                                            <span></span>
+                                            <span class="artist-name"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -352,51 +308,13 @@
                             <div class="music-detail_interest_title">
                                 <h3>Có thể bạn quan tâm</h3>
                                 <div class="music-detail_interest_content">
-                                    <div class="media-playlist">
-                                        <div class="media-playlist_item">
-                                            <div class="media-content_left">
-                                                <div class="media-playlist_checkbox">
-                                                    <label class="checkbox">
-                                                        <input type="checkbox" name="" id="">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </div>
-                                                <div class="song-icon">
-                                                    <ion-icon name="musical-notes-outline"></ion-icon>
-                                                </div>
-                                                <div class="song-thumb">
-                                                    <img src="access/image/0ebee04ce8c0e17f94a7836de9c0e2c8.jpg" alt="">
-                                                </div>
-                                                <div class="song-profile">
-                                                    <div class="song-profile_name">
-                                                        <span>Martini</span>
-                                                    </div>
-                                                    <div class="song-profile_singer">
-                                                        <a href="">Van Mai Huong</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="meida-content_center">
-                                                <span>Minh tinh</span>
-                                            </div>
-                                            <div class="media-content_right">
-                                                <div class="song-hover_item">
-                                                    <div class="level">
-                                                        <button><ion-icon name="mic-outline"></ion-icon></button>
-                                                        <button> <ion-icon name="heart-outline"></ion-icon></i></button>
-                                                    </div>
-                                                </div>
-                                                <div class="song-time">
-                                                    <span>04:30</span>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="media-playlist">                                      
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="library">
+                    <div  class="library">
                         <h1>Thư Viện
                             <span class="library_icon">
                                 <ion-icon name="play-circle"></ion-icon>
@@ -440,49 +358,12 @@
                             </div>
                             <div class="bottom-section-song_library">
                                 <div class="media-playlist">
-                                    <div class="media-playlist_item">
-                                        <div class="media-content_left">
-                                            <div class="media-playlist_checkbox">
-                                                <label class="checkbox">
-                                                    <input type="checkbox" name="" id="">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="song-icon">
-                                                <ion-icon name="musical-notes-outline"></ion-icon>
-                                            </div>
-                                            <div class="song-thumb">
-                                                <img src="access/image/img square/album_default.png" alt="">
-                                            </div>
-                                            <div class="song-profile">
-                                                <div class="song-profile_name">
-                                                    <span>Martini</span>
-                                                </div>
-                                                <div class="song-profile_singer">
-                                                    <a href="">Van Mai Huong</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="meida-content_center">
-                                            <span>Minh tinh</span>
-                                        </div>
-                                        <div class="media-content_right">
-                                            <div class="song-hover_item">
-                                                <div class="level">
-                                                    <button><ion-icon name="mic-outline"></ion-icon></button>
-                                                    <button> <ion-icon name="heart-outline"></ion-icon></i></button>
-                                                </div>
-                                            </div>
-                                            <div class="song-time">
-                                                <span>04:30</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="song-chart">
+                    <div class="song-chart">                      
                         <div class="item rank-item ">
                             <span class="rank-item_rating">1</span>
                             <div class="item_img rank-item_img">
@@ -494,6 +375,58 @@
                             </div>
                             <audio class="audio"
                                 src="access/audio/y2mate.com - Lose Control Radio Edit  Hedley抖音TikTok最红的网络歌曲抖音.mp3"></audio>
+                        </div>                        
+                    </div>
+                    <div class="artist-detail">
+                        <div class="artist-hero">
+                            <div class="artist-hero_left">
+                                <div class="artist-avatar">
+                                    <img src="" alt="">   
+                                </div>
+                                <div class="artist-information">
+                                    <div class="artist-information_top">
+                                        <h3>Vũ Phụng Tiên</h3>
+                                    </div>
+                                    <div class="artist-information_bottom"> 
+                                        <span class="flower">2222                                            
+                                        </span>
+                                        <span>người quan tâm</span>
+                                        <button class="btnflow">
+                                            <ion-icon name="person-add-outline"></ion-icon>
+                                            <span>Quan Tâm</span></button>
+                                    </div>
+                                </div>                                                            
+                            </div>                         
+                        </div>
+                                                
+                        <div class="artits-content">
+                            <div class="artits-content_top_left">
+                                <h3 class=" title artist-title">Mới Phát Hành</h3>
+                                <div href="#" class="artist-container">
+                                    <div class="container-cart-newsong">
+                                        <div class="newsong-thumb">
+                                            <img src="access/image/img square/32a35f4d26ee56366397c09953f6c269.jpg" alt="">                                            
+                                        </div>
+                                        <div class="newsong-content">
+                                            <p>(Single)</p>
+                                            <div class="content-namesong">
+                                                <h3>(Hiện chưa Có)</h3>
+                                            </div>
+                                            <div style="padding-left: 7px;" class="content-nameartist">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="artist-content_top_right">
+                                <h3 class=" title artist-title">Bài Hát</h3>
+                                <div class="content-multiline">
+                                    <div class="content-multiline_right">
+                                                                          
+                                    </div>                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </main>
@@ -501,13 +434,13 @@
             <div class="now-playing__bar">
                 <div class="now-playing__bar--main">
                     <div class="nowplaying__main--left">
-                        <div class="nowplaying__main--left--img">
-                            <img src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/cover/d/0/f/5/d0f5790631b016b46590a388ba64043c.jpg"
+                        <div onclick="musicdetial()" class="nowplaying__main--left--img">
+                            <img src="/access/image/img square/album_default.png"
                                 alt="">
                         </div>
                         <div class="nowplaying__main--left--title">
-                            <span class="intro">mùa hè năm ấy (intro)</span><br />
-                            <a href="#">Ban nhạc Hương Mùa Hè</a>
+                            <span class="intro"></span><br />
+                            <a href="#" onclick="artistdetail()"></a>
                         </div>
                         <div class=" nowplaying__main--left--icon">
                             <ion-icon name="heart-outline"></ion-icon>
@@ -520,10 +453,10 @@
                                 <ion-icon name="shuffle-outline"></ion-icon>
                             </div>
                             <div class="control-btn">
-                                <button class="back">
+                                <button class="backSong">
                                     <ion-icon name="play-back-outline"></ion-icon>
                                 </button>
-                                <button class="play">
+                                <button  class="play">
                                     <ion-icon name="play-circle-outline"></ion-icon>
                                 </button>
                                 <button class="fonward">
@@ -533,7 +466,7 @@
                             <div class="again"><ion-icon name="repeat-outline"></ion-icon>
                             </div>
                         </div>
-                        <input type="range">
+                        <input id="progress" type="range" value="0">
                         <audio id="audio" src=""></audio>
                     </div>
                     <div class="nowplaying_main-rihgt">
@@ -551,7 +484,7 @@
                             <div class="level-item_volum">
                                 <button>
                                     <ion-icon name="volume-high-outline"></ion-icon>
-                                    <input type="range" name="" id="">
+                                    <input type="range" name="" id="" >
                                 </button>
                             </div>
                             <div class="level-item_playlist">
@@ -588,745 +521,13 @@
                         </div>
                         <div class="player-queue_container_scroll">
                             <div class="list-item_media">
-                                <div>
-                                    <div class="media_full is-active ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="next-song">
-                                        <h3>Tiếp theo</h3>
-                                    </div>
+                                <div class="list-item_media-active">                                                                     
                                 </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                <div class="next-song">
+                                    <h3>Tiếp theo</h3>
                                 </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="media_full ">
-                                        <div class="media ">
-                                            <div class="media-left">
-                                                <div class="media-left_thumb">
-                                                    <img src="access/image/img square/artworks-000629761276-nbw3ci-t500x500 - Copy.jpg"
-                                                        alt="">
-                                                </div>
-                                                <div class="media-left_content">
-                                                    <div class="media-left_content_title">
-                                                        <span>Thanh Xuân Chưa 18</span>
-                                                    </div>
-                                                    <div class="media-left_content_artits">
-                                                        <a>Phạm Sắc Lệnh</a>,
-                                                        <a>LQ Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="level-item_song-queue">
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </div>
-                                                    <div class="item_song-queue">
-                                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
+                                <div class="list-item_media-not-active">                                    
+                                </div>                            
                             </div>
                         </div>
                     </div>

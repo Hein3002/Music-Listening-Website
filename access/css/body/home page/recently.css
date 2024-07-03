@@ -11,7 +11,7 @@
 	perspective: 0;	
 	margin-top: 20px;
 }
-#gallery a figure:nth-child(1) {
+#gallery a  figure:nth-child(1) {
 	--duration: 1.8s;
 	--pin-color: hotpink;
 }
@@ -31,7 +31,7 @@
 	--duration: 1.6s;
 	--pin-color: deeppink;
 }
-#gallery a figure:nth-child( 6) {
+#gallery a  figure:nth-child( 6) {
 	--duration: 1.2s;
 	--pin-color: mediumvioletred;
 }
@@ -47,7 +47,7 @@
 #gallery a figure:nth-child(odd) {
 	--direction: alternate;
 }
-#gallery a figure:nth-child(even) {
+#gallery  figure:nth-child(even) {
 	--direction: alternate-reverse;
 }
 #gallery a figure {	   
@@ -72,7 +72,7 @@
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-#gallery a figure.active  {
+#gallery .shaking a  figure  {
 	animation-duration: var(--duration), 1.5s;
 	animation-delay: var(--delay),
 		calc(var(--delay) + var(--duration) * var(--count));
@@ -82,7 +82,7 @@
 	animation-fill-mode: both;
 	animation-name: swing, swingEnd;
 }
-#gallery a figure:after {
+#gallery  figure:after {
 	position: absolute;
 	top: 0.22rem;
 	left: 50%;

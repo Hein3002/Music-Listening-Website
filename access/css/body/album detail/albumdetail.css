@@ -21,9 +21,11 @@
 }
 .album-thumb img{
     object-fit: cover;
-    height: auto;
+    height: 286px;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8)
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    background-position: center;
+    border-radius: 8px; 
 }
 .album-content{
     margin-left:  calc(24% + 50px);
@@ -55,4 +57,7 @@
     border-radius: 50px;
     background-color:#9b4de0;
     color: aliceblue;
+}
+.media-playlist_checkbox:not(.checked) {
+    visibility: hidden;
 }

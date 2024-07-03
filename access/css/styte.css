@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400&display=swap");
-/* --------------------------------------------------base------------------------------------- */
+
 :root {
 	--adjust-size: 0px;
 	--angle: 3deg;
@@ -8,7 +7,7 @@
 	--delay: calc(-0.5 * var(--duration));
 	--direction: alternate;
 	--pin-color: red;  
-	--back-color:linear-gradient( to bottom right, #111d3d,#170f23);
+	--back-color:linear-gradient( to bottom right,#170f23, #111d3d);
 	--back-color-item: linear-gradient(90deg, rgb(19 17 58) 0%, rgba(41,24,69,1) 15%, rgba(44,26,71,1) 67%, rgba(23,15,35,0) 100%);
 }
 * {
@@ -33,6 +32,26 @@ p {
 a {
 	color: #999;
 	text-decoration: none;
+}
+a{
+	color: #999;	
+}
+a:hover{
+	color: #9b4de0;	
+}
+ion-icon{
+	font-size: 22px;
+	border-radius: 999px;
+}
+ion-icon:hover{
+	color:rebeccapurple ;
+	cursor: pointer;	
+}
+.hover{
+	color: #9b4de0;
+}
+.not-hidden{
+	display: none;
 }
 /* ---------------------------custom scroll------------------------------- */
 .scroll::-webkit-scrollbar {
@@ -85,19 +104,33 @@ button{
 	color: #eee;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	
+	justify-content: center;	
 }
 
-a{
-	color: #999;	
+
+/* -----------------------pagination---------------------------- */
+.pagination{
+	margin-top: 20px;
+    list-style: none;
+    display: flex; 
+    justify-content: center;   
+    align-items: center;
+    gap:15px;
 }
-a:hover{
-	color: #9b4de0;
-	text-decoration: underline;
+.pagination-item{
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 50%;  
+    border: 1px solid rebeccapurple;
+	cursor: pointer;
+	font-weight: 500;
 }
-ion-icon{
-	font-size: 22px;
+.select{
+	background-color: rebeccapurple;
 }
 /* -------------------listitem----------------- */
 .listitem{
@@ -112,10 +145,9 @@ ion-icon{
 	position: relative;
 	display: flex;
 	justify-content: flex-start;
-	align-items:flex-start;
+	align-items:center;
 	margin-bottom: 15px;
 	width:100%;
-	background: transparent;
 	transition: 0.3s ease;
 	cursor: pointer;
 	border: solid thin transparent; /* Thêm biên cho phần tử giả tưởng và làm cho nó trong suốt ban đầu */
@@ -166,18 +198,47 @@ ion-icon{
  .media-playlist_checkbox{ 
 	 z-index: 3; 
 	 left: 4px;
-	 visibility: hidden; 
+	 visibility: visible; 
 	 transform: translateX(15px);
  }
- .media-playlist_checkbox label input{
-	 display: none;
- }
- .media-playlist_checkbox label{
-	 background-color: rebeccapurple;
-	 padding: 6px;
-	 display: inline-block;
-	 position: relative;    
- }
+ .media-playlist_checkbox {
+	display: flex;
+	align-items: center;
+	/* Add other styles specific to your container if needed */
+  }
+
+  .media-playlist_checkbox .checkbox {
+	display: flex;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	/* Add other styles specific to your checkbox if needed */
+  }
+
+  /* Ẩn checkbox mặc định */
+  .media-playlist_checkbox .checkbox input[type="checkbox"] {
+	display: none;
+  }
+
+  .media-playlist_checkbox .checkbox .checkmark {
+	height: 15px;
+	width: 15px;
+	background-color: rebeccapurple;
+	border: 2px solid rebeccapurple;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .media-playlist_checkbox .checkbox .checkmark::after {
+	content: '\2713'; 
+	font-size: 16px;
+	color: #fff;
+	display: none;
+  }
+  
+  .media-playlist_checkbox .checkbox input[type="checkbox"]:checked + .checkmark::after {
+	display: block;
+  }
  .media-playlist_item{
 	 margin-top: 3px;
 	 display: flex;
@@ -185,6 +246,7 @@ ion-icon{
 	 align-items: center;
 	 transition: all 0.3s;
 	 padding: 10px 0;
+	 background: var(--back-color-item);
 	 border-bottom: thin solid rgba(239, 174, 240, 0.2);
  }
  .media-content_left{
@@ -198,7 +260,7 @@ ion-icon{
 	 visibility: visible;
  }
  .song-icon ion-icon{
-	 font-size: 17px;
+	 font-size: 14px;
  }
  .media-content_left .song-thumb{
 	 height: 0;
@@ -232,9 +294,11 @@ ion-icon{
  .media-content_right{
 	 display: flex;
 	 gap: 30px;
+	 margin-right: 30px;
  }
  .song-hover_item{
 	 display: none;
+	 height: 30px;
  }
  .media-content_right .song-hover_item .level{
 	 display: flex;
@@ -246,13 +310,17 @@ ion-icon{
 	 font-weight: 500;
  }
  .song-hover_item .level button ion-icon {
-	 font-size: 20px;
+	 font-size: 25px;
+	 font-weight: 600;
+	
  }
  .media-playlist_item:hover .song-hover_item{
 	 display: block;
  }
+ .media-playlist_item:hover .song-time{
+    display: none;
+ }
  .media-playlist_item:hover {
-	 background: var(--back-color-item);
 	 transform: translateY(-3px);
  }
  .media-playlist_item:hover .media-playlist_checkbox{
@@ -279,12 +347,10 @@ ion-icon{
 }
 .active_control .control-btn .play ion-icon {
 	font-size: 40px;
-	color: rebeccapurple;
 }
 /* -------------------level------------------------ */
 .level{
     display: flex;
-    margin-top: 10px;
     justify-content: center;
     gap: 20px;
 }
@@ -298,6 +364,7 @@ ion-icon{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border-radius: 50%;
 }
 /* ---------------------------custom input:range----------------------------; */
 input[type="range"] {

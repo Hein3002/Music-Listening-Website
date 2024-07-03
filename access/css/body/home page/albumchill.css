@@ -14,13 +14,13 @@
     padding-bottom: 10px;
 }
 .albumchill-item{   
-    width: 200px;
-    padding-top: 30px;
+    padding-top: 30px;    
 }
 .albumchill-item_img{
     width: 200px;
-    height: 200px;  
+    height: 200px;
     margin-bottom: 15px;
+    background-position: center;
 }
 .albumchill-item_img img{
     width: 100%;

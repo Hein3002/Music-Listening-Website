@@ -35,9 +35,10 @@
     margin-bottom: 15px;
     background: transparent;
 	padding: 5px;		
+	border-radius: 5px;
 }
 .discovery-item:hover {
-	background:linear-gradient( rgb(60 48 76), rgb(58 40 86));
+	background:var(--back-color-item);
 	border: solid thin rebeccapurple;
 	transform: translateY(-5px);
 }
@@ -45,4 +46,5 @@
 .discovery-listitem_center,
 .discovery-listitem_left{
 	flex: 1;
+	padding: 10px;
 }

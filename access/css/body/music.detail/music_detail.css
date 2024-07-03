@@ -6,6 +6,7 @@
     height: 100%;
     border-radius: 15px;
     margin: auto;
+    display: none;
    
 }
 .music-deltail_active{
@@ -37,7 +38,7 @@
     height: auto;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) ;
-    filter: drop-shadow(0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5));
     object-fit: cover;
 }
 .music-detail_left_bottom .music-profile{
@@ -69,11 +70,10 @@
 .music-detail_right .music-artists{
     display: flex;   
     justify-content: flex-end;
-    align-items: center;
-    margin-right: 10px;   
+    align-items: center;   
 }
 .music-detail_right .music-artists span{
-    margin: 10px 0;
+    margin: 10px 0px;
     font-size: 13px;
     font-weight: 500;
     color: #eee;
@@ -134,4 +134,8 @@
     width: 100%;
     height: auto;
     border-radius: 50%;
+}
+.artist-list:hover{
+    color: #9b4de0;
+    cursor: pointer;
 }

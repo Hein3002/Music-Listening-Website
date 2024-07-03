@@ -7,8 +7,8 @@
     height: calc(100vh - 90px);
     z-index: 999;
     overflow: hidden scroll; 
-    display: none;  
-    
+    transform: translateX(100%);
+    transition: all 0.5s;    
 }
 .player-queue_container{
   position: relative;
@@ -74,7 +74,8 @@
 }
 .media_full{
     padding: 9px;
-    border-radius: 5px;       
+    border-radius: 5px;   
+    margin-bottom: 7px;    
 }
 .media{
     display:flex;
@@ -151,4 +152,7 @@
 }
 .is-active{
     background-color:rebeccapurple;
+}
+.open-queue{
+    transform: translateX(0);
 }

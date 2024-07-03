@@ -39,7 +39,6 @@
 .now-playing__bar--main .nowplaying__main--left--title a,
 .now-playing__bar--main .nowplaying__main--left--title span {
     text-decoration: none;
-    color: #eee;
     font-size: 12px;
     font-weight: 600;
 }
@@ -54,8 +53,6 @@
     font-size: 18px;
     font-weight: bold;
     margin-left: 10px;
-    color: white;
-    transition: 1s;
 }
 
 .nowplaying__main--center {
